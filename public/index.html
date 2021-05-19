@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/template.css">
 
 <!DOCTYPE html>
@@ -19,48 +20,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accordion Vanilla Javascript</title>
+    <title>Search Bar</title>
 </head>
 <body>
-    <header>
-        <h2>Here will it go my Accordion</h2>
-    </header>
-    <main>
-        <section class="section bg-bone">
-            <h2 class="section__heading" aria-label="">Accordion Content</h2>
-            <div id="accordion" class="accordion">
-                <div class="accordion__section">
-                    <button class="accordion_btn--toggle-all">
-                        <span class="accordion__btnToggleAllText">Expand All</span>
-                    </button>
-                    <div class="accordion__row">
-                        <button class="accordio_btn-toggle" type="button">
-                            <span>Open</span>
-                            <span class="accordion__toggleHeading">My First Content</span>
-                        </button>
-                        <div class="accordion__contentWrapper">
-                            <div class="accordio__content">
-                                <p>my content</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__row">
-                        <button class="accordio_btn-toggle" type="button">
-                            <span>open</span>
-                            <span class="accordion__toggleHeading">My Second Content</span>
-                        </button>
-                        <div class="accordion__contentWrapper">
-                            <div class="accordio__content">
-                                <p>my content</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-
+    <div class="searchWrapper">
+        <label for="searchBar">Search</label>
+        <input
+            type="text"
+            name="searchBar"
+            id="searchBar"
+            placeholder=" for a review, critic or book"
+        />
+    </div>
+    <section>
+        <div class="ulWrapper">
+            <ul id="bookUl"></ul>
+        </div>
+    </section>
 </body>
 </html><script src="js/scripts.js" defer></script>
 
